@@ -1,0 +1,33 @@
+/* conocenos index */
+.conocenosP {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include media-up(md) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @include media-up(lg) {
+        flex-wrap: nowrap;
+    }
+    .conocenosH {
+        border: .1rem solid #ccc;
+        padding: 2rem;
+        border-radius: 1rem;
+        @include media-up(md) {
+            flex-basis: calc(50% - 2rem);
+        }
+        @include media-up(lg) {
+            flex-basis: calc(25% - 2rem);
+            &:hover {
+                box-shadow: 0 0 1rem #000;
+            }
+        }
+        .conocenosH__txt {
+            p {
+                line-height: 2;
+            }
+        }
+    }
+}
+/* </conocenos index> */

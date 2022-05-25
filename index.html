@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  CSS normalize -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!--  </CSS normalize> -->
+
+    <!-- tipografía LATO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- </tipografía LATO> -->
+
+    <!-- CSS Bootstrap -->
+    <!-- CSS only -->
+    <link href="CSS/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- <CSS Bootstrap> -->
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="IMG/brain-svgrepo-com.svg" type="image/x-icon">
+    <!-- </favicon> -->
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="CSS/appStyle.css">
+    <!-- </Own CSS> -->
+
+    <title>Open Source Academy</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="siteHeader">
+
+        <div class="container-own headerContainer">
+
+            <!-- barra -->
+            <div class="barra">
+
+                <!-- logo -->
+                <div class="logo">
+                    <a href="./index.html">
+                        <div class="logo__img">
+                            <img src="IMG/brain-svgrepo-com.svg" alt="">
+                        </div>
+                    </a>
+                    <div class="logo__texto">
+                        <h1>Open Source Academy</h1>
+                    </div>
+                </div>
+                <!-- </logo> -->
+
+                <!-- menu de navegacion -->
+                <nav class="nav">
+                    <label for="Check" class="labelCheck">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2 svgCheck"
+                            width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <line x1="4" y1="6" x2="20" y2="6" />
+                            <line x1="4" y1="12" x2="20" y2="12" />
+                            <line x1="4" y1="18" x2="20" y2="18" />
+                        </svg>
+                    </label>
+                    <input type="checkbox" id="Check" class="inputCheck">
+                    <ul class="ulNavDesplegable">
+                        <li><a href="#">Nosotros</a></li>
+
+                        <!-- li Carreras -->
+                        <li class="liCheck"><a href="#">Carreras</a>
+                            <label for="carreraCheck" class="liCarreraCheck">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-arrow-down arrowCheck" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="18" y1="13" x2="12" y2="19" />
+                                    <line x1="6" y1="13" x2="12" y2="19" />
+                                </svg>
+                            </label>
+                            <input type="checkbox" id="carreraCheck" class="inputliCheck">
+                            <ul class="liCheckDesplegable">
+                                <li><a href="#">Progrmación Full-Stack</a></li>
+                                <li><a href="#">Trading Algorítmico</a></li>
+                                <li><a href="#">Blockchain Developer</a></li>
+                            </ul>
+                        </li>
+                        <!-- li Carreras -->
+
+                        <!-- li Cursos -->
+                        <li class="liCheck"><a href="#">Cursos</a>
+                            <label for="cursosCheck" class="liCursosCheck">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-arrow-down arrowCheck" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="18" y1="13" x2="12" y2="19" />
+                                    <line x1="6" y1="13" x2="12" y2="19" />
+                                </svg>
+                            </label>
+                            <input type="checkbox" id="cursosCheck" class="inputliCheck">
+                            <ul class="liCheckDesplegable liCheckDesplegable2">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                                <li><a href="#">AJAX</a></li>
+                                <li><a href="#">PHP</a></li>
+                                <li><a href="#">MySQL</a></li>
+                                <li><a href="#">MongoDB</a></li>
+                            </ul>
+                        </li>
+                        <!-- li Cursos -->
+
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+                <!-- </menu de navegacion> -->
+
+            </div>
+            <!-- </barra> -->
+
+            <div class="contenidoHeader">
+
+                <div class="contenidoHeader__texto">
+                    <h2>Aprende el super poder de la tecnología. <span style="color: #9172ff;">Contruye tu carrera en
+                            tech.</span></h2>
+                    <p>
+                        Toma mayor control de tu futuro profesional, aprendiendo las habilidades digitales con mayor
+                        demanda laboral, con alumnos de toda Latinoamérica de manera remota.
+                    </p>
+                </div>
+
+                <div class="contenidoHeader__experiencia">
+
+                    <div class="contenidoHeader__experiencia-item">
+                        <h3>+12,000</h3>
+                        <p>Capacitaciones</p>
+                    </div>
+
+                    <div class="contenidoHeader__experiencia-item">
+                        <h3>+32</h3>
+                        <p>Ciudades</p>
+                    </div>
+
+                    <div class="contenidoHeader__experiencia-item">
+                        <h3>+12</h3>
+                        <p>Países</p>
+                    </div>
+
+                    <div class="contenidoHeader__experiencia-item">
+                        <h3>x15</h3>
+                        <p>Más rápido</p>
+                    </div>
+
+                    <div class="contenidoHeader__experiencia-item">
+                        <h3>x30</h3>
+                        <p>Más barato</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!--.container -->
+
+    </header>
+    <!-- </header> -->
+
+    <!-- seccion empresas -->
+    <section class="section">
+        <h2 class="txt-center f-w300 section">Empresas que han contratado a nuestros estudiantes</h2>
+        <div class="carousel section">
+            <img src="IMG/group1.png" class="carouselIndex" alt="">
+            <img src="IMG/group2.png" class="carouselIndex" alt="">
+            <img src="IMG/group3.png" class="carouselIndex" alt="">
+        </div>
+    </section>
+    <!-- </seccion empresas> -->
+
+    <!-- seccion conocenos -->
+    <section class="section container-own">
+        <h2 class="txt-center f-w300 section">Conocenos</h2>
+
+        <div class="conocenosP">
+
+            <div class="conocenosH">
+                <div class="conocenosH__img">
+                    <img src="IMG/animacion-BID-Lab.gif" alt="" class="img">
+                </div>
+                <div class="conocenosH__txt">
+                    <p>
+                        Ganadores del primer lugar en el Desafío de Bootcamps en América Latina del BID Lab en 2020.
+                    </p>
+                </div>
+            </div>
+
+            <div class="conocenosH">
+                <div class="conocenosH__img">
+                    <img src="IMG/logo-google-launchpad-accelerator.png" alt="" class="img">
+                </div>
+                <div class="conocenosH__txt">
+                    <p>
+                        Una de las 9 Startups seleccionadas por el Google Launchpad Accelerator de LATAM en el 2019.
+                    </p>
+                </div>
+            </div>
+
+            <div class="conocenosH">
+                <div class="conocenosH__img">
+                    <img src="IMG/logo-forbes.jpg" alt="" class="img">
+                </div>
+                <div class="conocenosH__txt">
+                    <p>
+                        Reconocidos por Forbes como una de las 30 empresas promesa de México en el 2018.
+                    </p>
+                </div>
+            </div>
+
+            <div class="conocenosH">
+                <div class="conocenosH__img">
+                    <img src="IMG/logo-redbox.jpg" alt="" class="img">
+                </div>
+                <div class="conocenosH__txt">
+                    <p>
+                        Reconocidos con el Premio Redbox como la Startup más innovadora de México en el 2017.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- </seccion conocenos> -->
+
+    <!-- seccion carreras -->
+    <section class="container-own section">
+        <h2 class="txt-center f-w300 section">Nuestras Carreras</h2>
+
+        <div class="carrerasP">
+
+            <div class="carrerasH">
+                <div class="carrerasH__img">
+                    <img src="IMG/webDevelopment.jpg" alt="Curso Progrmación Web">
+                </div>
+                <div class="carrerasH__contenido">
+                    <h4>Progrmación Web</h4>
+                    <p>
+                        Obtén los conocimientos y la experiencia para convertirte en desarrollador web.
+                    </p>
+                    <a href="#" class="btn btn-warning btn-own">Ir a Curso</a>
+                </div>
+            </div>
+
+            <div class="carrerasH">
+                <div class="carrerasH__img">
+                    <img src="IMG/algorithmicTrading.jpg" alt="Curso Trading Algorítmico">
+                </div>
+                <div class="carrerasH__contenido">
+                    <h4>Trading Algorítmico</h4>
+                    <p>
+                        Aprenderas los lenguajes MQL4 y MQL5 para poder programar algorítmos de trading.
+                    </p>
+                    <a href="#" class="btn btn-warning btn-own">Ir a Curso</a>
+                </div>
+            </div>
+
+            <div class="carrerasH">
+                <div class="carrerasH__img">
+                    <img src="IMG/blockchainDeveloper.jpg" alt="Curso Blockchain Developer">
+                </div>
+                <div class="carrerasH__contenido">
+                    <h4>Blockchain Developer</h4>
+                    <p>
+                        Obtendras los conocimientos necesarios para desarrollar aplicaciones en cualquier red
+                        Blockchain.
+                    </p>
+                    <a href="#" class="btn btn-warning btn-own">Ir a Curso</a>
+                </div>
+            </div>
+
+            <div class="carrerasH">
+                <div class="carrerasH__img">
+                    <img src="IMG/What-is-data-science.jpg" alt="Curso Data Science">
+                </div>
+                <div class="carrerasH__contenido">
+                    <h4>Data Science</h4>
+                    <p>
+                        Aprende los conocimientos y herramientas para manejar datos y obtener respuestas a problemas de
+                        negocios.
+                    </p>
+                    <a href="#" class="btn btn-warning btn-own">Ir a Curso</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- </seccion carreras> -->
+
+    <!-- seccion Blog Video -->
+    <section class="container-own section">
+        <h2 class="text-center f-w300 section">Nuestros Blog</h2>
+
+        <section class="BlogVideo">
+
+            <section class="Blog">
+                <h3 class="text-center f-w300 section">¿Qué son los lenguajes de marcado?</h3>
+
+                <div class="blogFlex">
+
+                    <article class="articleBlog">
+                        <div class="articleBlog__img">
+                            <img src="IMG/HTML.png" alt="imagen de HTML" class="img">
+                        </div>
+                        <div class="articleBlog__contenido">
+                            <h4>¿Qué es HTML?</h4>
+                            <p>
+                                HTML es un lenguaje de marcado que sirve para dotar de estructura a nuestro sitio o
+                                aplicación web, mediante las etiquetas que este lenguaje nos proveé.
+                            </p>
+                            <a href="#">Seguir leyendo....</a>
+                        </div>
+                    </article>
+
+                    
+                    <article class="articleBlog">
+                        <div class="articleBlog__img">
+                            <img src="IMG/CSS.png" alt="imagen de CSS" class="img">
+                        </div>
+                        <div class="articleBlog__contenido">
+                            <h4>¿Qué es CSS?</h4>
+                            <p>
+                                CSS es un lenguaje de estilos que nos permite crear el diseño de nuestro sitio o aplicación web.
+                            </p>
+                            <a href="#">Seguir leyendo....</a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="Video">
+
+            </section>
+
+        </section>
+
+    </section>
+    <!-- </seccion Blog Video> -->
+
+    <!-- JS Bootstrap -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="JS/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- JS </Bootstrap> -->
+
+</body>
+
+</html>
