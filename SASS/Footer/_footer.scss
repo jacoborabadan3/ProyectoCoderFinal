@@ -1,0 +1,88 @@
+.contenidoFooter{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap:  4rem;
+    align-items: center;
+    @include media-up(lg) {
+        flex-direction: row;
+        gap: 8rem;
+        justify-content: center;
+    }
+
+    /* .contenidoFooter */
+    .contenidoFooter__redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include media-up(lg) {
+            border-left: .3rem solid #9272FF;
+            padding: 2rem;
+        }
+
+        .contenidoFooter__redesLogo {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            img {
+                width: 7rem;
+                height: 7rem;
+                @include media-up(lg) {
+                    animation-name: logoFooterAnmtn;
+                    animation-duration: 2s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    @keyframes logoFooterAnmtn {
+                        0% {
+                            background-color: #ffc107;
+                        }
+                    }
+                }
+            }
+            p {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .contenidoFooter__paginas {
+        h3 {
+            margin: 2rem auto;
+        }
+        ul {
+            li {
+                a {
+                    font-size: 2rem;
+                    color: #fff;
+                    margin: 2rem auto;
+                }
+            }
+        }
+        @include media-up(lg) {
+            border-left: .3rem solid #FFAC66;
+            padding: 2rem 
+        }
+    }
+
+    .contenidoFooter__recursos,
+    .contenidoFooter__legal {
+        @extend .contenidoFooter__paginas;
+    }
+
+    .contenidoFooter__recursos {
+        @include media-up(lg) {
+            border-left: .3rem solid #E85D97;
+        }
+    }
+
+    .contenidoFooter__legal {
+        @include media-up(lg) {
+            border-left: .3rem solid #5BFF66;
+        }
+    }
+
+    /* </.contenidoFooter> */
+
+}

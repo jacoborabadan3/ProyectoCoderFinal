@@ -1,0 +1,147 @@
+.formCarrera {
+    @include media-up(lg) {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .formCarrera__info {
+        @include media-up(lg) {
+            flex-basis: calc(60%);
+            background-color: #f5f5f5;
+            padding: 4rem;
+            border-radius: 1rem;
+        }
+        ul {
+            li {
+                list-style: initial;
+            }
+        }
+        p {
+            font-size: 2rem;
+        }
+    }
+
+    .formCarrera__form {
+        @include media-up(lg) {
+            flex-basis: calc(40%);
+        }
+        form {
+            background-color: #9172FF;
+            padding: 2rem;
+            border-radius: 1rem;
+            fieldset {
+                background-color: #fff;
+                padding: 2rem;
+                border-radius: 1rem;
+                border: none;
+                legend {
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                }
+                label {
+                    margin: 1rem 0;
+                }
+                div.inputItemForm {
+                    input {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* main */
+.infoCarrera {
+    @include media-up(lg) {
+        display: flex;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    .infoCarrera__contenido {
+        @include media-up(lg) {
+            flex-basis: calc(60%);
+        }
+    }
+
+    .infoCarrera__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        @include media-up(lg) {
+            flex-basis: calc(40%);
+        }
+
+        .infoCarrera__H {
+            background-color: #ccc;
+            padding: 2rem 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            p {
+                font-size: 1.8rem;
+            }
+        }
+
+    }
+
+}
+
+.temarioFlex {
+    @include media-up(lg) {
+        display: flex;
+        align-items: center;
+    }
+
+    .temarioContenido {
+        @include media-up(lg) {
+            flex-basis: calc(50%);
+        }
+
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        @include media-up(md) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        @include media-up(lg) {
+            padding: 1rem;
+            height: 40rem;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+
+        .temarioContenido-curso {
+            background-color: #f5f5f5;
+            border-radius: 1rem;
+            padding: 1rem;
+            ul {
+                li {
+                    list-style: initial;
+                }
+            }
+            @include media-up(md) {
+                flex-basis: calc(33.3% - 2rem);
+            }
+            @include media-up(lg) {
+                flex-basis: calc(33.3% - 2rem);
+            }
+        }
+
+    }
+
+    .imagenTemario {
+        @include media-up(lg) {
+            flex-basis: calc(50%);
+        }
+    }
+
+}
+
+/* </main> */

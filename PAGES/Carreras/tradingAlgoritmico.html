@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  CSS normalize -->
+    <link rel="stylesheet" href="../../CSS/normalize.css">
+    <!--  </CSS normalize> -->
+
+    <!-- tipografía LATO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- </tipografía LATO> -->
+
+    <!-- CSS Bootstrap -->
+    <!-- CSS only -->
+    <link href="../../CSS/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- <CSS Bootstrap> -->
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../../IMG/brain-svgrepo-com.svg" type="image/x-icon">
+    <!-- </favicon> -->
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="../../CSS/appStyle.css">
+    <!-- </Own CSS> -->
+
+    <title>Programación Web</title>
+</head>
+
+<body>
+
+
+    <!-- header -->
+    <header class="bg-dark">
+
+        <div class="container-own headerContainer">
+
+            <!-- barra -->
+            <div class="barra">
+
+                <!-- logo -->
+                <div class="logo">
+                    <a href="../../index.html">
+                        <div class="logo__img">
+                            <img src="../../IMG/brain-svgrepo-com.svg" alt="">
+                        </div>
+                    </a>
+                    <div class="logo__texto">
+                        <h1>Open Source Academy</h1>
+                    </div>
+                </div>
+                <!-- </logo> -->
+
+                <!-- menu de navegacion -->
+                <nav class="nav">
+                    <label for="Check" class="labelCheck">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2 svgCheck"
+                            width="60" height="60" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <line x1="4" y1="6" x2="20" y2="6" />
+                            <line x1="4" y1="12" x2="20" y2="12" />
+                            <line x1="4" y1="18" x2="20" y2="18" />
+                        </svg>
+                    </label>
+                    <input type="checkbox" id="Check" class="inputCheck">
+                    <ul class="ulNavDesplegable">
+                        <li><a href="../../PAGES/nosotros.html">Nosotros</a></li>
+
+                        <!-- li Carreras -->
+                        <li class="liCheck"><a href="#">Carreras</a>
+                            <label for="carreraCheck" class="liCarreraCheck">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-arrow-down arrowCheck" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="18" y1="13" x2="12" y2="19" />
+                                    <line x1="6" y1="13" x2="12" y2="19" />
+                                </svg>
+                            </label>
+                            <input type="checkbox" id="carreraCheck" class="inputliCheck">
+                            <ul class="liCheckDesplegable">
+                                <li><a href="../../PAGES/Carreras/programacionWeb.html">Progrmación Full-Stack</a></li>
+                                <li><a href="../../PAGES/Carreras/tradingAlgoritmico.html">Trading Algorítmico</a></li>
+                                <li><a href="../../PAGES/Carreras/blockchainDeveloper.html">Blockchain Developer</a>
+                                </li>
+                                <li><a href="../../PAGES/Carreras/dataScience.html">Data Science</a></li>
+                            </ul>
+                        </li>
+                        <!-- li Carreras -->
+
+                        <!-- li Cursos -->
+                        <li class="liCheck"><a href="#">Cursos</a>
+                            <label for="cursosCheck" class="liCursosCheck">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-arrow-down arrowCheck" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="18" y1="13" x2="12" y2="19" />
+                                    <line x1="6" y1="13" x2="12" y2="19" />
+                                </svg>
+                            </label>
+                            <input type="checkbox" id="cursosCheck" class="inputliCheck">
+                            <ul class="liCheckDesplegable liCheckDesplegable2">
+                                <li><a href=".././Cursos/html.html">HTML</a></li>
+                                <li><a href=".././Cursos/css.html">CSS</a></li>
+                                <li><a href=".././Cursos/JavaScript.html">JavaScript</a></li>
+                                <li><a href=".././Cursos/ajax.html">AJAX</a></li>
+                                <li><a href=".././Cursos/php.html">PHP</a></li>
+                                <li><a href=".././Cursos/MySQL.html">MySQL</a></li>
+                                <li><a href="../Cursos/mongoDB.html">MongoDB</a></li>
+                            </ul>
+                        </li>
+                        <!-- li Cursos -->
+
+                        <li><a href=".././blog.html">Blog</a></li>
+                        <li><a href=".././contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <!-- </menu de navegacion> -->
+
+            </div>
+            <!-- </barra> -->
+
+        </div>
+        <!--.container -->
+
+    </header>
+    <!-- </header> -->
+
+
+    <!-- form carrera -->
+    <section class="container-own section">
+
+        <div class="formCarrera">
+
+            <div class="formCarrera__info section">
+                <h1 class="text-center text-xl-start text-md-start">Trading Algorítmico</h1>
+                <ul>
+                    <li>Clases en linea y en vivo con expertos</li>
+                    <li>Proyectos prácticos guiados por tutores</li>
+                    <li>¡Te damos una semana de prueba!</li>
+                </ul>
+                <p>Programas intensivos para llevar tu carrea al siguiente nivel</p>
+                <a href="#" class="btn btn-warning btn-own d-xl-inline-block">Inscribirme ahora</a>
+            </div>
+
+            <div class="formCarrera__form section">
+                <form action="">
+                    <fieldset>
+                        <legend>Solicita Información</legend>
+
+                        <div class="formItems">
+
+                            <div class="formItems__item">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" placeholder="Nombre" required>
+                            </div>
+
+                            <div class="formItems__item">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" placeholder="Apellido" required>
+                            </div>
+
+                            <div class="formItems__item">
+                                <label for="correo">E-mail:</label>
+                                <input type="email" id="correo" placeholder=" E-mail" required>
+                            </div>
+
+                            <div class="formItems__item">
+                                <label for="pais">País:</label>
+                                <select id="pais">
+                                    <option value="" disabled selected>--Selecciona--</option>
+                                    <option value="">México</option>
+                                    <option value="">Argentina</option>
+                                    <option value="">EUA</option>
+                                    <option value="">España</option>
+                                </select>
+                            </div>
+
+                            <div class="formItems__item">
+                                <label for="numero">Número de teléfono:</label>
+                                <input type="tel" id="numero">
+                            </div>
+
+                            <div class="formItems__item my-4">
+                                <p>Al enviar los datos solicitados confirmas que has leído y aceptas tu conformidad con
+                                    nuestros <a href="#">Términos y Condiciones</a> y <a href="#">Aviso de Privacidad
+                                        Integral</a>.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="inputItemForm">
+                            <input type="submit" value="Enviar" class="btn btn-own btn-dark">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- </form carrera> -->
+
+
+    <!-- acerca de la carrera -->
+    <main class="container-own section">
+
+        <h2 class="text-center f-w300">Acerca de la Carrera</h2>
+
+        <div class="infoCarrera">
+
+            <div class="infoCarrera__contenido">
+                <img src="../../IMG/undraw_financial_data_es63.png" alt="" class="img">
+                <p>
+                    <button class="btn btn-primary btn-own" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseWidthExample" aria-expanded="false"
+                        aria-controls="collapseWidthExample">
+                        Introducción
+                    </button>
+                </p>
+                <div style="min-height: 120px;">
+                    <div class="collapse collapse-vertical" id="collapseWidthExample">
+                        <div class="card card-body" style="width: 100%;">
+                            <p>
+                                En este curso aprenderás las nociones centrales del Trading y cómo aplicarlas para
+                                operar en el mercado financiero. A su vez, conocerás sobre el manejo de emociones al
+                                operar en Trading. Al finalizar el curso tendrás los conocimientos y el enfoque
+                                necesarios para analizar los mercados financiero, realizar un Plan de trading e invertir
+                                en ellos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="infoCarrera__inputs section">
+
+                <div class="infoCarrera__H">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="40"
+                        height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <polyline points="12 7 12 12 15 15"></polyline>
+                    </svg>
+                    <p>Duración: 50 semanas</p>
+                </div>
+
+                <div class="infoCarrera__H">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar" width="40"
+                        height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <rect x="4" y="5" width="16" height="16" rx="2"></rect>
+                        <line x1="16" y1="3" x2="16" y2="7"></line>
+                        <line x1="8" y1="3" x2="8" y2="7"></line>
+                        <line x1="4" y1="11" x2="20" y2="11"></line>
+                        <line x1="11" y1="15" x2="12" y2="15"></line>
+                        <line x1="12" y1="15" x2="12" y2="18"></line>
+                    </svg>
+                    <p>2 clases semanales de 2 hrs</p>
+                </div>
+
+                <div class="infoCarrera__H">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-to-down"
+                        width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <line x1="4" y1="20" x2="20" y2="20"></line>
+                        <line x1="12" y1="14" x2="12" y2="4"></line>
+                        <line x1="12" y1="14" x2="16" y2="10"></line>
+                        <line x1="12" y1="14" x2="8" y2="10"></line>
+                    </svg>
+                    <p>Programa de la carrera</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="temario">
+
+            <h3 class="section">¿Qué aprenderas?</h3>
+            <h4>Temario</h4>
+            <p class="">Todos tenemos tiempos y necesidades de estudio diferentes, es por eso que te ofrecemos
+                tres planes para que elijas el que mejor se adapte a tus necesidades.</p>
+
+            <div class="temarioFlex">
+
+                <div class="temarioContenido">
+
+                    <div class="temarioContenido-curso">
+                        <h4>Intro al Trading</h4>
+                        <ul>
+                            <li>¿Cómo funciona el mercado bursatil?</li>
+                            <li>¿Cómo funciona la oferta y la demanda?</li>
+                            <li>Microesctructura del Mercado</li>
+                        </ul>
+                    </div>
+
+                    <div class="temarioContenido-curso">
+                        <h4>Instrumentos Financieros</h4>
+                        <ul>
+                            <li>Acciones</li>
+                            <li>Commodities</li>
+                            <li>Divisas</li>
+                            <li>ETFs</li>
+                            <li>Cripto Activos</li>
+                        </ul>
+                    </div>
+
+                    <div class="temarioContenido-curso">
+                        <h4>Herramientos de Trabajo</h4>
+                        <ul>
+                            <li>Proveedores de Datos</li>
+                            <li>Lenguajes de Programacion</li>
+                            <li>Python</li>
+                            <li>Plataforma TWS</li>
+                        </ul>
+                    </div>
+
+                    <div class="temarioContenido-curso">
+                        <h4>Fundamentos de Progrmación</h4>
+                        <ul>
+                            <li>Algoritmos</li>
+                            <li>Tipos de Objetos y Variables</li>
+                            <li>Arquitectura de Máquina</li>
+                            <li>Programas Ramificados</li>
+                            <li>Estructuras Ciclicas o Iterativas</li>
+                        </ul>
+                    </div>
+
+                    <div class="temarioContenido-curso">
+                        <h4>Fundamentos Matemáticos</h4>
+                        <ul>
+                            <li>Algebra Conmutativa</li>
+                            <li>Lógica Difusa</li>
+                            <li>Lógica Booleana</li>
+                            <li>Ecuaciones en derivadas parciales</li>
+                            <li>Probabilidad</li>
+                            <li>Estadistica Bayesiana</li>
+                        </ul>
+                    </div>
+
+                    <div class="temarioContenido-curso">
+                        <h4>Módulos de Funciones</h4>
+                        <ul>
+                            <li>Funciones Pandas</li>
+                            <li>Numpy</li>
+                            <li>PyLab</li>
+                            <li>Testing</li>
+                        </ul>
+                    </div>
+
+                    <div class="temarioContenido-curso">
+                        <h4>Gestión del Riesgo</h4>
+                        <ul>
+                            <li>Gestion del Riesgo 1</li>
+                            <li>Gestion del Riesgo 2</li>
+                            <li>Gestion del Riesgo 3</li>
+                            <li>Otros riesgos operativos</li>
+                        </ul>
+                    </div>
+
+                    <div class="temarioContenido-curso">
+                        <h4>Conectividad Bloomberg</h4>
+                        <ul>
+                            <li>Bloomberg API connectivity</li>
+                        </ul>
+                    </div>
+
+                    <div class="temarioContenido-curso">
+                        <h4>Lenguaje MQL4 y MQL5</h4>
+                        <ul>
+                            <li>Trading Robots</li>
+                            <li>Expert Advisors</li>
+                            <li>Scripts</li>
+                            <li>Librerias</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="imagenTemario">
+                    <img src="../../IMG/undraw_Firmware_re_fgdy.png" alt="" class="img">
+                </div>
+
+            </div>
+
+        </div>
+
+        <a href="#" class="btn btn-warning btn-own d-xl-inline-block mt-5">Inscribirme ahora</a>
+
+    </main>
+    <!-- </acerca de la carrera> -->
+
+
+    <!-- footer -->
+    <footer class="bg-dark">
+
+        <div class="contenidoFooter">
+
+            <div class="contenidoFooter__redes">
+                <div class="contenidoFooter__redesLogo">
+                    <a href="../../index.html">
+                        <img src="../../IMG/brain-svgrepo-com.svg" alt="logo Open Source Academy">
+                    </a>
+                    <p class="text-white">Open Source Academy</p>
+                </div>
+                <div class="contenidoFooter__redesIconos">
+                    <!-- facebook -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook"
+                            width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                        </svg>
+                    </a>
+                    <!-- </facebook> -->
+                    <!-- instagram -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram"
+                            width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+                        </svg>
+                    </a>
+                    <!-- </instagram> -->
+                    <!-- github -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
+                            width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- </github> -->
+                    <!-- youtube -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
+                            width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <rect x="3" y="5" width="18" height="14" rx="4"></rect>
+                            <path d="M10 9l5 3l-5 3z"></path>
+                        </svg>
+                    </a>
+                    <!-- </youtube> -->
+                    <!-- twiter -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter"
+                            width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z">
+                            </path>
+                        </svg>
+                    </a>
+                    <!-- </twiter> -->
+                    <!-- tiktok -->
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok"
+                            width="40" height="40" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5"></path>
+                        </svg>
+                    </a>
+                    <!-- </tiktok> -->
+                </div>
+            </div>
+
+            <div class="contenidoFooter__paginas">
+                <h3 class=" text-white text-center">Páginas</h3>
+                <ul>
+                    <li><a href="#">RSS</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Mentoria</a></li>
+                    <li><a href="#">Sobre mi</a></li>
+                    <li><a href="#">BLog</a></li>
+                </ul>
+            </div>
+
+            <div class="contenidoFooter__recursos">
+                <h3 class="text-white text-center">Recursos</h3>
+                <ul>
+                    <li><a href="#">Aprende JavaScript desde cero</a></li>
+                    <li><a href="#">Curso de JavaScript Gratis</a></li>
+                    <li><a href="#">Curso de Node.js Gratis</a></li>
+                    <li><a href="#">Curso de Vue.js Gratis</a></li>
+                    <li><a href="#">Aprende Rust desde cero</a></li>
+                </ul>
+            </div>
+
+            <div class="contenidoFooter__legal">
+                <h3 class="text-white text-center">Legal</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- </footer> -->
+
+
+    <!-- JS Bootstrap -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="../../JS/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- JS </Bootstrap> -->
+
+
+</body>
+
+</html>

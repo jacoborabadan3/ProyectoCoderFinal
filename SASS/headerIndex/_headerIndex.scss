@@ -111,7 +111,6 @@
 
         li.liCheck {
             position: relative;
-
             label.liCarreraCheck,
             label.liCursosCheck {
                 cursor: pointer;
@@ -120,7 +119,7 @@
                 top: .3rem;
 
                 @include media-up(lg) {
-                    left: 8rem;
+                    label.liCarreraCheck {}
                 }
             }
 
@@ -188,22 +187,25 @@
 /* animacion logo */
 .logo {
     @include media-up(lg) {
-        .logo__img > img {
+        .logo__img>img {
             animation-name: logoAnmtn;
             animation-duration: 2s;
             animation-iteration-count: infinite;
             animation-timing-function: linear;
         }
+
         @keyframes logoAnmtn {
             0% {
                 filter: drop-shadow(0 0 .6rem #000);
             }
+
             100% {
                 filter: drop-shadow(0 0 .6rem #fff);
             }
         }
     }
 }
+
 /* </animacion logo> */
 
 /* contenido header */
