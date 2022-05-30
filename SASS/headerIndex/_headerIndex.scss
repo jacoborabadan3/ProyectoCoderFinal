@@ -87,6 +87,27 @@
                 position: unset;
                 display: flex;
                 gap: 6rem;
+
+                li.liCheck {
+                    position: relative;
+                    &:hover {
+                        ul.liCheckDesplegable {
+                            display: block;
+                            clip-path: none;
+                            position: absolute;
+                            top: 3rem;
+                            height: auto;
+                            width: 30rem;
+                            left: -10rem;
+                            li {
+                                a {
+                                    transform: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
             }
 
             li {
@@ -98,6 +119,11 @@
 
                     @include media-up(lg) {
                         margin: 0;
+                        transition: transform, .5s;
+                        &:hover {
+                            color: #000;
+                            transform: scale(1.3, 1.3);
+                        }
                     }
                 }
             }
@@ -111,15 +137,13 @@
 
         li.liCheck {
             position: relative;
-            label.liCarreraCheck,
-            label.liCursosCheck {
+            label.liCarreraCheck {
                 cursor: pointer;
                 position: absolute;
                 left: 9rem;
                 top: .3rem;
-
                 @include media-up(lg) {
-                    label.liCarreraCheck {}
+                    display: none;
                 }
             }
 
@@ -164,18 +188,6 @@
             input.inputliCheck {
                 &:checked+ul.liCheckDesplegable {
                     clip-path: circle(100% at center);
-                }
-            }
-
-            ul.liCheckDesplegable2 {
-                height: 20rem;
-                overflow: hidden;
-                overflow-y: scroll;
-
-                @include media-up(lg) {
-                    position: fixed;
-                    left: 70%;
-                    height: 42%;
                 }
             }
         }
