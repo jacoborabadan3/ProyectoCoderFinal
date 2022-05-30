@@ -79,7 +79,7 @@
             width: 100%;
             padding: 2rem;
             clip-path: circle(0% at center);
-            transition: clip-path .5s ease-in-out;
+            transition: clip-path .3s ease-in-out;
             top: 8rem;
 
             @include media-up(lg) {
