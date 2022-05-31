@@ -37,6 +37,10 @@ sub-listas, y el funcionamiento de como es que aparece
 el menu hamburguesa en versión responsive.  
 
 
+## Error con la imagen del header
+
+Hay un error que por más que busqué no supe como solucionarlo, el github pages, no se muestra la imagen del header, pero en Netlify si la muestra.
+
 
 
 
